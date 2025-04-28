@@ -48,8 +48,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.savedstate)
     implementation(libs.androidx.ui.test.android)
 
-
-
     // compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
@@ -96,6 +94,7 @@ dependencies {
 
     // coil
     implementation(libs.coil.compose)
+    implementation(libs.coil.compose.v210)
 
     // Retrofit
     implementation(libs.retrofit)
@@ -107,8 +106,11 @@ dependencies {
     // Multidex
     implementation(libs.multidex)
 
-    implementation(libs.coil.compose.v210)
+    // WorkManager
+    implementation(libs.androidx.work.runtime.ktx)
 
+    // Unity
+    implementation(libs.unity.ads)
 
     // Kotpref SharePreferences lib: https://github.com/chibatching/Kotpref
     implementation(libs.kotpref)
