@@ -1,3 +1,203 @@
 <resources>
-    <string name="app_name">FreddyFridge_StartingOver</string>
+
+    <!-- - - - - - - - - - - - - - - - - - COMMONS - - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save_btn_label">Save</string>
+    <string name="update_btn_label">Update</string>
+    <string name="no_food_in_list">"No products here… "</string>
+    <string name="delete_food_entry_btn_hint">Delete Product entry btn</string>
+    <string name="dialog_confirm_if_consumed_text">Set Product as CONSUMED, are you sure ?</string>
+    <string name="dialog_confirm_if_not_consumed_text">Set Product as NOT CONSUMED, are you sure ?</string>
+    <string name="dialog_confirm_if_deleting_text">Are you sure you want to DELETE ?</string>
+    <string name="foodExpiring_title">Expiring Products List</string>
+    <string name="foodExpired_title">Wasted Products List</string>
+    <string name="foodSaved_title">Products consumed</string>
+
+
+    <!-- - - - - - - - - - - - - - - - INTRO STUFF  - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="intro_1_title">1 : Make your shopping…</string>
+    <string name="intro_1_subtitle">…and open FreddyFridge !</string>
+
+    <string name="intro_2_title">2 : Store your product and expiring date…</string>
+    <string name="intro_2_subtitle">…with the New button and Speech Recognition</string>
+
+    <string name="intro_3_title">3 : Check expiring date</string>
+    <string name="intro_3_subtitle">and be alerted before happens : no more products wasted!</string>
+
+
+
+    <!-- - - - - - - - - - - - - - - -  MAIN SCREENS - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="main_list_title">Expiring Products today : </string>
+    <string name="main_subtitle">Zero waste!</string>
+    <string name="no_food_todays">"No products expiring for today ! "</string>
+
+
+    <!-- - - - - - - - - - - - - - - -  INSERT FOOD - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="insert_food_title">Insert Product</string>
+    <string name="insert_food_name_tv">Product description :</string>
+    <string name="insert_food_name_hint">Product description</string>
+    <string name="insert_name_placeholder">Name</string>
+    <string name="insert_expiring_date_label">"Expiring Date : "</string>
+    <string name="insert_food_description_msg">Must Insert your product description…</string>
+    <string name="insert_food_expiration_date_miss_msg">Must choose a date…</string>
+    <string name="insert_food_inserted_confirm">"Inserted successfully !"</string>
+    <string name="insert_speak_btn_description">Press and speak</string>
+    <string name="insert_speech_not_recognized">Try again</string>
+
+
+    <!-- - - - - - - - - - - - - - - - - - SETTINGS - - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_category_title">Notifications Setting</string>
+    <string name="settings_category_help_title">Help</string>
+
+    <string name="settings_how_many_days_before_title">Days Before product-deadline notifications :</string>
+    <string name="settings_how_many_days_before_label">How many DAYS \nBEFORE food expiration date want you to be notified ?
+        (Default is 2 days before expiring date)</string>
+    <string name="settings_how_many_hours_title">Notifications Hours frequency during the day :</string>
+    <string name="settings_how_many_hours_label">With what HOURS FREQUENCY \n in a day want to be notified about food expiring?
+        (Default is every 6 hours)</string>
+    <string name="settings_notify_every_01">Notify every </string>
+    <string name="settings_notify_every_02"> hours </string>
+
+    <string name="settings_days_alert_dialog_title">Days Alert</string>
+    <string name="settings_days_alert_dialog_msg">Days before alert value can\'t be empty</string>
+    <string name="settings_goto_system_app_settings_label">Go to system App Settings</string>
+    <string name="settings_goto_system_app_settings_title">App Settings</string>
+    <string name="settings_share_today_title">"Products expiring TODAY : "</string>
+    <string name="settings_expiring_food_list_subject">"Expiring Products global list : "</string>
+    <string name="settings_saved_food_list_subject">"Saved Products till now : "</string>
+    <string name="settings_wasted_food_list_subject">"WASTED Products till now : "</string>
+    <string name="settings_review_btn_summary">Like this app? Left a review please !</string>
+    <string name="settings_review_btn_title">App Review</string>
+    <string name="settings_myapps_btn_summary">Discover all my other apps and games!</string>
+    <string name="settings_myapps_btn_title">My Other apps and games</string>
+
+    <string name="settings_support_btn_key" translatable="false">goto_support_btn_key</string>
+    <string name="settings_support_btn_summary">Suggestions, bugs, errors, whatever? drop a line  here please : indie.walkabout.71@gmail.com</string>
+    <string name="settings_support_btn_title">Support</string>
+    <string name="gdpr_btn_title">GDPR</string>
+    <string name="gdpr_btn_summary">GDPR Consent</string>
+
+    <!-- - - - - - - - - - - - - Notifications   - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="notification_nextdays_expiring_food_title">NEXT DAYS Expiring Foods found, check. </string>
+    <string name="notification_nextdays_expiring_body">Click below for complete list</string>
+    <string name="notification_nextdays_expiring_channel_name" translatable="false">next-days-expiring-food  notifications</string>
+
+    <string name="notification_today_expiring_food_title">"TODAY Expiring Product FOUND, check ! "</string>
+    <string name="notification_today_expiring_body">Click below for complete list</string>
+    <string name="notification_today_expiring_channel_name" translatable="false">today-expiring-food notifications</string>
+
+    <string name="notification_show_food_expiring_action_title">Show me expiring products</string>
+    <string name="notification_show_food_expiring_today_action_title">Show me TODAY expiring products</string>
+    <string name="notification_dismiss_action_title">Got it</string>
+
+    <!-- - - - - - - - - - - - - - - - MENU LABEL   - - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="menu_home_label_item">Home</string>
+    <string name="menu_expired_label_item">Expired</string>
+    <string name="menu_consumed_label_item">Consumed</string>
+    <string name="menu_expiring_label_item">Expiring</string>
+    <string name="menu_add_label_item">ADD</string>
+
+
+    <!-- - - - - - - - - - - - - - - - - -  CREDITS - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="credits_btn_title">Credits</string>
+    <string name="credits_btn_summary">See credits and attributions here.</string>
+
+    <!-- - - - - - - - - - - - - Credits text   - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <string name="credits_text" translatable="false">
+        <b>CREDITS &amp; ATTRIBUTIONS</b>\n
+
+        <b>Idea</b>\n
+        Gigliola Rocca\n\n
+
+        <b>Development and Design</b>\n
+        Simone Mapelli\n
+        <a href='http://www.indie-walkabout.eu/'> www.indie-walkabout.eu </a>\n\n
+
+        <b>Attributions</b>\n\n
+
+        Alarm clock in icons :\n
+        <a href="https://www.freepik.com/free-photos-vectors/office">Office vector created by dooder - www.freepik.com</a>\n\n
+
+        Fridge image :\n
+        <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik - www.freepik.com</a>\n\n
+
+        Fruits images :\n
+        <a href="https://vecteezy.com" rel="nofollow">Graphics Provided by www.Vecteezy.com</a>\n\n
+
+        Background : \n
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>\n
+    </string>
+
+
+
+    <!-- - - - - - - - - - - - - Content description  - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="background_image">background image</string>
+    <string name="app_logo_right">app logo right</string>
+    <string name="app_logo_left">app logo left</string>
+    <string name="app_logo">app logo</string>
+    <string name="settings_icon">settings icon</string>
+    <string name="help_icon">help icon</string>
+    <string name="content_menu_home_label_item">Icon Home</string>
+    <string name="content_menu_expired_label_item">Icon Expired food</string>
+    <string name="content_menu_consumed_label_item">Icon Consumed food</string>
+    <string name="content_menu_expiring_label_item">Icon Expiring food</string>
+    <string name="content_menu_add_label_item">Icon ADD food</string>
+
+
+    <!-- - - - - - - - - - - - - - -  NOT TRANSLATABLE - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="app_package" translatable="false">eu.indiewalkabout.fridgemanager</string>
+    <string name="gdpr_btn_key" translatable="false">gdpr_withdraw</string>
+    <string name="credits_btn_key" translatable="false">credits</string>
+    <string name="confirm_dialog_string_settings_icon" translatable="false">confirm dialog @string/settings_icon</string>
+    <string name="settings_days_before_deadline_count" translatable="false">days_before_deadline</string>
+    <string name="settings_days_before_default" translatable="false">2</string>
+    <string name="settings_btn_key" translatable="false">notifications_settings</string>
+    <string name="settings_hours_freq_today_deadline_count" translatable="false">todays_howmany_each_hours</string>
+    <string name="settings_review_btn_key" translatable="false">app_review_btn_key</string>
+    <string name="settings_myapps_btn_key" translatable="false">goto_myapps_btn_key</string>
+
+    <string name="settings_today_hours_repeat_default" translatable="false">@string/settings_6_hours_value</string>
+    <string name="settings_1_hours_label" translatable="false">1</string>
+    <string name="settings_2_hours_label" translatable="false">2</string>
+    <string name="settings_3_hours_label" translatable="false">3</string>
+    <string name="settings_4_hours_label" translatable="false">4</string>
+    <string name="settings_5_hours_label" translatable="false">5</string>
+    <string name="settings_6_hours_label" translatable="false">6</string>
+    <string name="settings_7_hours_label" translatable="false">7</string>
+    <string name="settings_8_hours_label" translatable="false">8</string>
+    <string name="settings_9_hours_label" translatable="false">9</string>
+    <string name="settings_10_hours_label" translatable="false">10</string>
+    <string name="settings_11_hours_label" translatable="false">11</string>
+    <string name="settings_12_hours_label" translatable="false">12</string>
+
+
+    <string name="settings_1_hours_value" translatable="false">1</string>
+    <string name="settings_2_hours_value" translatable="false">2</string>
+    <string name="settings_3_hours_value" translatable="false">3</string>
+    <string name="settings_4_hours_value" translatable="false">4</string>
+    <string name="settings_5_hours_value" translatable="false">5</string>
+    <string name="settings_6_hours_value" translatable="false">6</string>
+    <string name="settings_7_hours_value" translatable="false">7</string>
+    <string name="settings_8_hours_value" translatable="false">8</string>
+    <string name="settings_9_hours_value" translatable="false">9</string>
+    <string name="settings_10_hours_value" translatable="false">10</string>
+    <string name="settings_11_hours_value" translatable="false">11</string>
+    <string name="settings_12_hours_value" translatable="false">12</string>
+
+    <!-- -
+    This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+    For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id"  translatable="false">YOUR_BANNER_AD_UNIT_ID</string>
+
+
+
+
+
+
+
+
 </resources>
