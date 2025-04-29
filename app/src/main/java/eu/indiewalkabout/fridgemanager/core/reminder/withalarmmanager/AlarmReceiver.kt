@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.qualifiers.ApplicationContext
 import eu.indiewalkabout.fridgemanager.FreddyFridgeApp
 import eu.indiewalkabout.fridgemanager.core.util.DateUtility
@@ -19,15 +18,11 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 
-@AndroidEntryPoint
-class AlarmReceiver : BroadcastReceiver() {
-    @Inject
-    lateinit var repository: FridgeManagerRepository
-    @Inject
-    lateinit var preferenceUtility: PreferenceUtility
-    @Inject
-    @ApplicationContext
-    lateinit var context: Context
+class AlarmReceiver @Inject constructor(
+    private val repository: FridgeManagerRepository,
+    // private val preferenceUtility: PreferenceUtility,
+    @ApplicationContext private val context: Context
+) : BroadcastReceiver() {
 
     // for real :
     private val days = PreferenceUtility.getDaysCount(context)

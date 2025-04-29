@@ -14,10 +14,10 @@ import eu.indiewalkabout.fridgemanager.core.reminder.withalarmmanager.AlarmRemin
 @HiltAndroidApp
 class FreddyFridgeApp : MultiDexApplication(), Configuration.Provider {
     companion object {
-        private var sContext: Context? = null
+        private var appContext: Context? = null
         // Return application context wherever we are in the app
         fun getsContext(): Context? {
-            return sContext
+            return appContext
         }
 
         /*// Implement a function to display an ad if the surfacing is ready:
@@ -38,6 +38,7 @@ class FreddyFridgeApp : MultiDexApplication(), Configuration.Provider {
 */
     override fun onCreate() {
         super.onCreate()
+        appContext = applicationContext
         // sContext = applicationContext
         // TODO: put in external file
         // unityId = applicationContext.getString(R.string.unityads_id)
