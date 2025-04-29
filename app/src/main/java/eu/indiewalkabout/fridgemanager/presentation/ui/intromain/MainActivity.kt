@@ -3,11 +3,12 @@ package eu.indiewalkabout.fridgemanager.presentation.ui.intromain
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
+import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.HiltAndroidApp
 import eu.indiewalkabout.fridgemanager.core.util.GenericUtility.hideStatusNavBars
 
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity()  {
     // private lateinit var binding: ActivityMainBinding
 
