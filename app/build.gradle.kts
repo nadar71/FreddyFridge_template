@@ -74,6 +74,7 @@ dependencies {
 
     // hilt
     implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.common)
     ksp(libs.hilt.android.compiler)
 
     // Accompanist lib for compose integration
@@ -111,6 +112,9 @@ dependencies {
 
     // Unity
     implementation(libs.unity.ads)
+
+    // Preference
+    implementation(libs.androidx.preference.ktx)
 
     // Kotpref SharePreferences lib: https://github.com/chibatching/Kotpref
     implementation(libs.kotpref)
